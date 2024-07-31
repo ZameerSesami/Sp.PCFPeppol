@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{68974A1D-32DB-4149-9724-D384425790A9}</ProjectGuid>
+    <ProjectTypeGuids>{EF7E3281-CD33-11D4-8326-00C04FA0CE8D};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>library</OutputType>
+    <GenericProcessing>true</GenericProcessing>
+    <RootNamespace>Sp.PCFPeppol.Orchestrations</RootNamespace>
+    <AssemblyName>Sp.PCFPeppol.Orchestrations</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <BpelCompliance>True</BpelCompliance>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>PCFPeppolKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Name>System.Configuration</Name>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.Pipeline">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.DefaultPipelines">
+      <Name>Microsoft.BizTalk.DefaultPipelines</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.GlobalPropertySchemas">
+      <Name>Microsoft.BizTalk.GlobalPropertySchemas</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.BizTalk.TestTools">
+      <Name>Microsoft.BizTalk.TestTools</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.XLANGs.BaseTypes">
+      <Name>Microsoft.XLANGs.BaseTypes</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PCFPeppolKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_PCFPeppolStaging.odx">
+      <TypeName>Process_PeppolXML</TypeName>
+      <Namespace>Sp.PCFPeppol.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sp.PCFPeppol.Common\Sp.PCFPeppol.Common.csproj">
+      <Project>{af2bacf9-2b00-4304-b489-a07dd0f986ac}</Project>
+      <Name>Sp.PCFPeppol.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sp.PCFPeppol.Pipelines\Sp.PCFPeppol.Pipelines.btproj">
+      <Project>{89c595a1-090b-4915-a374-b9c214fe9576}</Project>
+      <Name>Sp.PCFPeppol.Pipelines</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sp.PCFPeppol.Schemas\Sp.PCFPeppol.Schemas.btproj">
+      <Project>{07717a7a-a4de-47ce-a759-f410e2f8c529}</Project>
+      <Name>Sp.PCFPeppol.Schemas</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sp.PCFPeppol.Transforms\Sp.PCFPeppol.Transforms.btproj">
+      <Project>{e2c4a089-b30a-49c9-8fe9-6c2cfbd562f4}</Project>
+      <Name>Sp.PCFPeppol.Transforms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_Peppol_To_PCFDB.odx">
+      <TypeName>Process_Peppol_To_PCF</TypeName>
+      <Namespace>Sp.PCFPeppol.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_PCFPeppolGRN.odx">
+      <TypeName>Process_PCFPeppolGRNQueue</TypeName>
+      <Namespace>Sp.PCFPeppol.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_PCFPeppolInvoiceDraft.odx">
+      <TypeName>Process_PCFPeppolInvoiceDraft</TypeName>
+      <Namespace>Sp.PCFPeppol.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <ItemGroup>
+    <XLang Include="Process_PCFPeppol_ProdXML.odx">
+      <TypeName>Process_Download_PCFPeppolXML</TypeName>
+      <Namespace>Sp.PCFPeppol.Orchestrations</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
+</Project>

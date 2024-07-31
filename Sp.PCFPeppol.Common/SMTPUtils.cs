@@ -8,6 +8,7 @@ namespace Sp.PCFPeppol.Common
 {
     public class SMTPUtils
     {
+
         public static void SetContentType(Microsoft.XLANGs.BaseTypes.XLANGPart part, string contentTypeValue)
         {
             part.SetPartProperty(typeof(Microsoft.XLANGs.BaseTypes.ContentType), contentTypeValue);

@@ -88,6 +88,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="uspPCFPeppolStaging_ProcedureResultSet.dbo.InterfacePCFPeppolStaging.xsd">
+      <TypeName>uspPCFPeppolStaging_ProcedureResultSet_dbo_InterfacePCFPeppolStaging</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFPeppolStaging_TypedProcedure.dbo.xsd">
+      <TypeName>uspPCFPeppolStaging_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="uspHeaderDraft_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceDraft.xsd">
       <TypeName>uspHeaderDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceDraft</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
@@ -125,16 +135,6 @@
     </Schema>
     <Schema Include="uspHeadValidate_TypedProcedure.dbo.xsd">
       <TypeName>uspHeadValidate_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspPCFStaging_ProcedureResultSet.dbo.InterfacePCFPeppolStaging.xsd">
-      <TypeName>uspPCFStaging_ProcedureResultSet_dbo_InterfacePCFPeppolStaging</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspPCFStaging_TypedProcedure.dbo.xsd">
-      <TypeName>uspPCFStaging_TypedProcedure_dbo</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -226,22 +226,7 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo4.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo1.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo10.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo11.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo12.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo13.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo14.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo2.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo3.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo4.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo5.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo6.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo7.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo8.xml" />
-    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo9.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />

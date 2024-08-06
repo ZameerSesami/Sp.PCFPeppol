@@ -8,7 +8,7 @@ namespace Sp.PCFPeppol.Schemas {
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"StoredProcedureResultSet0", @"ArrayOfStoredProcedureResultSet0"})]
-    public sealed class uspPCFStaging_ProcedureResultSet_dbo_InterfacePCFPeppolStaging : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    public sealed class uspPCFPeppolStaging_ProcedureResultSet_dbo_InterfacePCFPeppolStaging : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
@@ -36,7 +36,7 @@ namespace Sp.PCFPeppol.Schemas {
   <xs:element name=""ArrayOfStoredProcedureResultSet0"" nillable=""true"" type=""ns3:ArrayOfStoredProcedureResultSet0"" />
 </xs:schema>";
         
-        public uspPCFStaging_ProcedureResultSet_dbo_InterfacePCFPeppolStaging() {
+        public uspPCFPeppolStaging_ProcedureResultSet_dbo_InterfacePCFPeppolStaging() {
         }
         
         public override string XmlContent {

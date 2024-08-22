@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:ns3="http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceItemDraft" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation=".\uspItemDraft_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceItemDraft.xsd" namespace="http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceItemDraft" />
+  <xs:import schemaLocation=".\uspInvoiceItemDraft_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceItemDraft.xsd" namespace="http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceItemDraft" />
   <xs:annotation>
     <xs:appinfo>
       <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">TypedProcedure.dbo</fileNameHint>
@@ -14,10 +14,10 @@
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" maxOccurs="1" name="InstanceIdentifier" nillable="true">
+        <xs:element minOccurs="0" maxOccurs="1" name="ID" nillable="true">
           <xs:simpleType>
             <xs:restriction base="xs:string">
-              <xs:maxLength value="50" />
+              <xs:maxLength value="100" />
             </xs:restriction>
           </xs:simpleType>
         </xs:element>

@@ -7,47 +7,47 @@ namespace Sp.PCFPeppol.Schemas {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
-    [SchemaRoots(new string[] {@"InterfacePCFPeppolInvoiceSubmit", @"InterfacePCFPeppolInvoiceSubmitResponse"})]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Sp.PCFPeppol.Schemas.uspInvoiceSubmit_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceSubmit", typeof(global::Sp.PCFPeppol.Schemas.uspInvoiceSubmit_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceSubmit))]
-    public sealed class uspInvoiceSubmit_TypedProcedure_dbo : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    [SchemaRoots(new string[] {@"InterfacePCFPeppolGRNInvoice", @"InterfacePCFPeppolGRNInvoiceResponse"})]
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Sp.PCFPeppol.Schemas.uspPCFGRNInvoice_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice", typeof(global::Sp.PCFPeppol.Schemas.uspPCFGRNInvoice_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice))]
+    public sealed class uspPCFGRNInvoice_TypedProcedure_dbo : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns:ns3=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceSubmit"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo"" version=""1.0"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
-  <xs:import schemaLocation=""Sp.PCFPeppol.Schemas.uspInvoiceSubmit_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceSubmit"" namespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceSubmit"" />
+<xs:schema xmlns:ns3=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolGRNInvoice"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo"" version=""1.0"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+  <xs:import schemaLocation=""Sp.PCFPeppol.Schemas.uspPCFGRNInvoice_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice"" namespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolGRNInvoice"" />
   <xs:annotation>
     <xs:appinfo>
       <fileNameHint xmlns=""http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd"">TypedProcedure.dbo</fileNameHint>
       <references xmlns=""http://schemas.microsoft.com/BizTalk/2003"">
-        <reference targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceSubmit"" />
+        <reference targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolGRNInvoice"" />
       </references>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name=""InterfacePCFPeppolInvoiceSubmit"">
+  <xs:element name=""InterfacePCFPeppolGRNInvoice"">
     <xs:annotation>
       <xs:documentation>
-        <doc:action xmlns:doc=""http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation"">TypedProcedure/dbo/InterfacePCFPeppolInvoiceSubmit</doc:action>
+        <doc:action xmlns:doc=""http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation"">TypedProcedure/dbo/InterfacePCFPeppolGRNInvoice</doc:action>
       </xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs=""0"" maxOccurs=""1"" name=""InstanceIdentifier"" nillable=""true"">
+        <xs:element minOccurs=""0"" maxOccurs=""1"" name=""ID"" nillable=""true"">
           <xs:simpleType>
             <xs:restriction base=""xs:string"">
-              <xs:maxLength value=""50"" />
+              <xs:maxLength value=""100"" />
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name=""InterfacePCFPeppolInvoiceSubmitResponse"">
+  <xs:element name=""InterfacePCFPeppolGRNInvoiceResponse"">
     <xs:annotation>
       <xs:documentation>
-        <doc:action xmlns:doc=""http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation"">TypedProcedure/dbo/InterfacePCFPeppolInvoiceSubmit/response</doc:action>
+        <doc:action xmlns:doc=""http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation"">TypedProcedure/dbo/InterfacePCFPeppolGRNInvoice/response</doc:action>
       </xs:documentation>
     </xs:annotation>
     <xs:complexType>
@@ -59,7 +59,7 @@ namespace Sp.PCFPeppol.Schemas {
   </xs:element>
 </xs:schema>";
         
-        public uspInvoiceSubmit_TypedProcedure_dbo() {
+        public uspPCFGRNInvoice_TypedProcedure_dbo() {
         }
         
         public override string XmlContent {
@@ -71,8 +71,8 @@ namespace Sp.PCFPeppol.Schemas {
         public override string[] RootNodes {
             get {
                 string[] _RootElements = new string [2];
-                _RootElements[0] = "InterfacePCFPeppolInvoiceSubmit";
-                _RootElements[1] = "InterfacePCFPeppolInvoiceSubmitResponse";
+                _RootElements[0] = "InterfacePCFPeppolGRNInvoice";
+                _RootElements[1] = "InterfacePCFPeppolGRNInvoiceResponse";
                 return _RootElements;
             }
         }
@@ -86,15 +86,15 @@ namespace Sp.PCFPeppol.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo",@"InterfacePCFPeppolInvoiceSubmit")]
+        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo",@"InterfacePCFPeppolGRNInvoice")]
         [System.SerializableAttribute()]
-        [SchemaRoots(new string[] {@"InterfacePCFPeppolInvoiceSubmit"})]
-        public sealed class InterfacePCFPeppolInvoiceSubmit : Microsoft.XLANGs.BaseTypes.SchemaBase {
+        [SchemaRoots(new string[] {@"InterfacePCFPeppolGRNInvoice"})]
+        public sealed class InterfacePCFPeppolGRNInvoice : Microsoft.XLANGs.BaseTypes.SchemaBase {
             
             [System.NonSerializedAttribute()]
             private static object _rawSchema;
             
-            public InterfacePCFPeppolInvoiceSubmit() {
+            public InterfacePCFPeppolGRNInvoice() {
             }
             
             public override string XmlContent {
@@ -106,7 +106,7 @@ namespace Sp.PCFPeppol.Schemas {
             public override string[] RootNodes {
                 get {
                     string[] _RootElements = new string [1];
-                    _RootElements[0] = "InterfacePCFPeppolInvoiceSubmit";
+                    _RootElements[0] = "InterfacePCFPeppolGRNInvoice";
                     return _RootElements;
                 }
             }
@@ -121,15 +121,15 @@ namespace Sp.PCFPeppol.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo",@"InterfacePCFPeppolInvoiceSubmitResponse")]
+        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo",@"InterfacePCFPeppolGRNInvoiceResponse")]
         [System.SerializableAttribute()]
-        [SchemaRoots(new string[] {@"InterfacePCFPeppolInvoiceSubmitResponse"})]
-        public sealed class InterfacePCFPeppolInvoiceSubmitResponse : Microsoft.XLANGs.BaseTypes.SchemaBase {
+        [SchemaRoots(new string[] {@"InterfacePCFPeppolGRNInvoiceResponse"})]
+        public sealed class InterfacePCFPeppolGRNInvoiceResponse : Microsoft.XLANGs.BaseTypes.SchemaBase {
             
             [System.NonSerializedAttribute()]
             private static object _rawSchema;
             
-            public InterfacePCFPeppolInvoiceSubmitResponse() {
+            public InterfacePCFPeppolGRNInvoiceResponse() {
             }
             
             public override string XmlContent {
@@ -141,7 +141,7 @@ namespace Sp.PCFPeppol.Schemas {
             public override string[] RootNodes {
                 get {
                     string[] _RootElements = new string [1];
-                    _RootElements[0] = "InterfacePCFPeppolInvoiceSubmitResponse";
+                    _RootElements[0] = "InterfacePCFPeppolGRNInvoiceResponse";
                     return _RootElements;
                 }
             }

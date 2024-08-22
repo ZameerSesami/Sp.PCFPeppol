@@ -6,35 +6,32 @@ namespace Sp.PCFPeppol.Schemas {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Document)]
-    [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute(typeof(System.String), "InstanceIdentifier", XPath = @"/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll']/*[local-name()='InstanceIdentifier' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll']", XsdType = @"string")]
-    [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute(typeof(System.String), "PeppolXMLPath", XPath = @"/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll']/*[local-name()='PeppolXMLPath' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll']", XsdType = @"string")]
+    [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute(typeof(System.String), "ID", XPath = @"/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolInvoiceDraftPoll']/*[local-name()='ID' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolInvoiceDraftPoll']", XsdType = @"string")]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"TypedPollingResultSet0", @"ArrayOfTypedPollingResultSet0", @"TypedPolling"})]
-    public sealed class uspGRNPoll_TypedPolling_InterfacePCFPeppolGRNQueuePoll : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    public sealed class uspPollInvoiceDraft_TypedPolling_InterfacePCFPeppolInvoiceDraftPoll : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:tns=""http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll"" version=""1.0"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+<xs:schema xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" xmlns:tns=""http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolInvoiceDraftPoll"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolInvoiceDraftPoll"" version=""1.0"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
   <xs:annotation>
     <xs:appinfo>
-      <fileNameHint xmlns=""http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd"">TypedPolling.InterfacePCFPeppolGRNQueuePoll</fileNameHint>
+      <fileNameHint xmlns=""http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd"">TypedPolling.InterfacePCFPeppolInvoiceDraftPoll</fileNameHint>
     </xs:appinfo>
   </xs:annotation>
   <xs:complexType name=""TypedPollingResultSet0"">
     <xs:sequence>
-      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""InstanceIdentifier"" nillable=""true"" type=""xs:string"" />
-      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""PeppolXMLPath"" nillable=""true"" type=""xs:string"" />
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""ID"" nillable=""true"" type=""xs:string"" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name=""TypedPollingResultSet0"" nillable=""true"" type=""tns:TypedPollingResultSet0"">
     <xs:annotation>
       <xs:appinfo>
         <b:properties>
-          <b:property distinguished=""true"" xpath=""/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll']/*[local-name()='InstanceIdentifier' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll']"" />
-          <b:property distinguished=""true"" xpath=""/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll']/*[local-name()='PeppolXMLPath' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll']"" />
+          <b:property distinguished=""true"" xpath=""/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolInvoiceDraftPoll']/*[local-name()='ID' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolInvoiceDraftPoll']"" />
         </b:properties>
       </xs:appinfo>
     </xs:annotation>
@@ -49,7 +46,7 @@ namespace Sp.PCFPeppol.Schemas {
     <xs:annotation>
       <xs:documentation>
         <doc:action xmlns:doc=""http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation"">TypedPolling</doc:action>
-        <doc:description xmlns:doc=""http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation"">EXEC [V6DATA_PCF].[dbo].[InterfacePCFPeppolGRNQueuePoll]</doc:description>
+        <doc:description xmlns:doc=""http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation"">EXEC [V6DATA_PCF].[dbo].[InterfacePCFPeppolInvoiceDraftPoll]</doc:description>
       </xs:documentation>
     </xs:annotation>
     <xs:complexType>
@@ -60,7 +57,7 @@ namespace Sp.PCFPeppol.Schemas {
   </xs:element>
 </xs:schema>";
         
-        public uspGRNPoll_TypedPolling_InterfacePCFPeppolGRNQueuePoll() {
+        public uspPollInvoiceDraft_TypedPolling_InterfacePCFPeppolInvoiceDraftPoll() {
         }
         
         public override string XmlContent {
@@ -88,9 +85,8 @@ namespace Sp.PCFPeppol.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll",@"TypedPollingResultSet0")]
-        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute(typeof(System.String), "InstanceIdentifier", XPath = @"/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll']/*[local-name()='InstanceIdentifier' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll']", XsdType = @"string")]
-        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute(typeof(System.String), "PeppolXMLPath", XPath = @"/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll']/*[local-name()='PeppolXMLPath' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll']", XsdType = @"string")]
+        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolInvoiceDraftPoll",@"TypedPollingResultSet0")]
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute(typeof(System.String), "ID", XPath = @"/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolInvoiceDraftPoll']/*[local-name()='ID' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolInvoiceDraftPoll']", XsdType = @"string")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"TypedPollingResultSet0"})]
         public sealed class TypedPollingResultSet0 : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -125,7 +121,7 @@ namespace Sp.PCFPeppol.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll",@"ArrayOfTypedPollingResultSet0")]
+        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolInvoiceDraftPoll",@"ArrayOfTypedPollingResultSet0")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfTypedPollingResultSet0"})]
         public sealed class ArrayOfTypedPollingResultSet0 : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -160,7 +156,7 @@ namespace Sp.PCFPeppol.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolGRNQueuePoll",@"TypedPolling")]
+        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolInvoiceDraftPoll",@"TypedPolling")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"TypedPolling"})]
         public sealed class TypedPolling : Microsoft.XLANGs.BaseTypes.SchemaBase {

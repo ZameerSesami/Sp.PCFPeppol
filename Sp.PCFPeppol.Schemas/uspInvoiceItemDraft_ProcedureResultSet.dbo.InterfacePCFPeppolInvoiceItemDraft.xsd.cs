@@ -8,17 +8,17 @@ namespace Sp.PCFPeppol.Schemas {
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"StoredProcedureResultSet0", @"ArrayOfStoredProcedureResultSet0"})]
-    public sealed class uspGRNInvoice_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    public sealed class uspInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns:ns3=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolGRNInvoice"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolGRNInvoice"" version=""1.0"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+<xs:schema xmlns:ns3=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceItemDraft"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceItemDraft"" version=""1.0"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
   <xs:annotation>
     <xs:appinfo>
-      <fileNameHint xmlns=""http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd"">ProcedureResultSet.dbo.InterfacePCFPeppolGRNInvoice</fileNameHint>
+      <fileNameHint xmlns=""http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd"">ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceItemDraft</fileNameHint>
     </xs:appinfo>
   </xs:annotation>
   <xs:complexType name=""StoredProcedureResultSet0"">
@@ -36,7 +36,7 @@ namespace Sp.PCFPeppol.Schemas {
   <xs:element name=""ArrayOfStoredProcedureResultSet0"" nillable=""true"" type=""ns3:ArrayOfStoredProcedureResultSet0"" />
 </xs:schema>";
         
-        public uspGRNInvoice_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice() {
+        public uspInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft() {
         }
         
         public override string XmlContent {
@@ -63,7 +63,7 @@ namespace Sp.PCFPeppol.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolGRNInvoice",@"StoredProcedureResultSet0")]
+        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceItemDraft",@"StoredProcedureResultSet0")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"StoredProcedureResultSet0"})]
         public sealed class StoredProcedureResultSet0 : Microsoft.XLANGs.BaseTypes.SchemaBase {
@@ -98,7 +98,7 @@ namespace Sp.PCFPeppol.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolGRNInvoice",@"ArrayOfStoredProcedureResultSet0")]
+        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceItemDraft",@"ArrayOfStoredProcedureResultSet0")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"ArrayOfStoredProcedureResultSet0"})]
         public sealed class ArrayOfStoredProcedureResultSet0 : Microsoft.XLANGs.BaseTypes.SchemaBase {

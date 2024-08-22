@@ -6,7 +6,7 @@ namespace Sp.PCFPeppol.Schemas {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Document)]
-    [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute(typeof(System.String), "InstanceIdentifier", XPath = @"/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']/*[local-name()='InstanceIdentifier' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']", XsdType = @"string")]
+    [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute(typeof(System.String), "Id", XPath = @"/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']/*[local-name()='Id' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']", XsdType = @"string")]
     [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute(typeof(System.String), "PeppolXMLPath", XPath = @"/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']/*[local-name()='PeppolXMLPath' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']", XsdType = @"string")]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"TypedPollingResultSet0", @"ArrayOfTypedPollingResultSet0", @"TypedPolling"})]
@@ -25,7 +25,7 @@ namespace Sp.PCFPeppol.Schemas {
   </xs:annotation>
   <xs:complexType name=""TypedPollingResultSet0"">
     <xs:sequence>
-      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""InstanceIdentifier"" nillable=""true"" type=""xs:string"" />
+      <xs:element minOccurs=""0"" maxOccurs=""1"" name=""Id"" nillable=""true"" type=""xs:string"" />
       <xs:element minOccurs=""0"" maxOccurs=""1"" name=""PeppolXMLPath"" nillable=""true"" type=""xs:string"" />
     </xs:sequence>
   </xs:complexType>
@@ -33,7 +33,7 @@ namespace Sp.PCFPeppol.Schemas {
     <xs:annotation>
       <xs:appinfo>
         <b:properties>
-          <b:property distinguished=""true"" xpath=""/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']/*[local-name()='InstanceIdentifier' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']"" />
+          <b:property distinguished=""true"" xpath=""/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']/*[local-name()='Id' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']"" />
           <b:property distinguished=""true"" xpath=""/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']/*[local-name()='PeppolXMLPath' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']"" />
         </b:properties>
       </xs:appinfo>
@@ -89,7 +89,7 @@ namespace Sp.PCFPeppol.Schemas {
         }
         
         [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling",@"TypedPollingResultSet0")]
-        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute(typeof(System.String), "InstanceIdentifier", XPath = @"/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']/*[local-name()='InstanceIdentifier' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']", XsdType = @"string")]
+        [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute(typeof(System.String), "Id", XPath = @"/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']/*[local-name()='Id' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']", XsdType = @"string")]
         [Microsoft.XLANGs.BaseTypes.DistinguishedFieldAttribute(typeof(System.String), "PeppolXMLPath", XPath = @"/*[local-name()='TypedPollingResultSet0' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']/*[local-name()='PeppolXMLPath' and namespace-uri()='http://schemas.microsoft.com/Sql/2008/05/TypedPolling/InterfacePCFPeppolPolling']", XsdType = @"string")]
         [System.SerializableAttribute()]
         [SchemaRoots(new string[] {@"TypedPollingResultSet0"})]

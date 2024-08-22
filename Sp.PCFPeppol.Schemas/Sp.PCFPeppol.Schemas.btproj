@@ -88,6 +88,81 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="uspSubmitInvoice_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceSubmit.xsd">
+      <TypeName>uspSubmitInvoice_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceSubmit</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspSubmitInvoice_TypedProcedure.dbo.xsd">
+      <TypeName>uspSubmitInvoice_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPollInvoiceDraft_TypedPolling.InterfacePCFPeppolInvoiceDraftPoll.xsd">
+      <TypeName>uspPollInvoiceDraft_TypedPolling_InterfacePCFPeppolInvoiceDraftPoll</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspInvoiceItemDraft_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceItemDraft.xsd">
+      <TypeName>uspInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspInvoiceItemDraft_TypedProcedure.dbo.xsd">
+      <TypeName>uspInvoiceItemDraft_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspInvoiceDraft_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceDraft.xsd">
+      <TypeName>uspInvoiceDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceDraft</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspInvoiceDraft_TypedProcedure.dbo.xsd">
+      <TypeName>uspInvoiceDraft_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPollGRNQ_TypedPolling.InterfacePCFPeppolGRNQueuePoll.xsd">
+      <TypeName>uspPollGRNQ_TypedPolling_InterfacePCFPeppolGRNQueuePoll</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFGRNInvoice_ProcedureResultSet.dbo.InterfacePCFPeppolGRNInvoice.xsd">
+      <TypeName>uspPCFGRNInvoice_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFGRNInvoice_TypedProcedure.dbo.xsd">
+      <TypeName>uspPCFGRNInvoice_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFItemValidate_ProcedureResultSet.dbo.InterfacePCFPeppolItemValidation.xsd">
+      <TypeName>uspPCFItemValidate_ProcedureResultSet_dbo_InterfacePCFPeppolItemValidation</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFItemValidate_TypedProcedure.dbo.xsd">
+      <TypeName>uspPCFItemValidate_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspHeadValidation_ProcedureResultSet.dbo.InterfacePCFPeppolHeaderValidation.xsd">
+      <TypeName>uspHeadValidation_ProcedureResultSet_dbo_InterfacePCFPeppolHeaderValidation</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspHeadValidation_TypedProcedure.dbo.xsd">
+      <TypeName>uspHeadValidation_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFPeppolPoll_TypedPolling.InterfacePCFPeppolPolling.xsd">
+      <TypeName>uspPCFPeppolPoll_TypedPolling_InterfacePCFPeppolPolling</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="uspPCFPeppolStaging_ProcedureResultSet.dbo.InterfacePCFPeppolStaging.xsd">
       <TypeName>uspPCFPeppolStaging_ProcedureResultSet_dbo_InterfacePCFPeppolStaging</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
@@ -95,51 +170,6 @@
     </Schema>
     <Schema Include="uspPCFPeppolStaging_TypedProcedure.dbo.xsd">
       <TypeName>uspPCFPeppolStaging_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspHeaderDraft_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceDraft.xsd">
-      <TypeName>uspHeaderDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceDraft</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspHeaderDraft_TypedProcedure.dbo.xsd">
-      <TypeName>uspHeaderDraft_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspItemDraft_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceItemDraft.xsd">
-      <TypeName>uspItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspItemDraft_TypedProcedure.dbo.xsd">
-      <TypeName>uspItemDraft_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspItemValidate_ProcedureResultSet.dbo.InterfacePCFPeppolItemValidation.xsd">
-      <TypeName>uspItemValidate_ProcedureResultSet_dbo_InterfacePCFPeppolItemValidation</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspItemValidate_TypedProcedure.dbo.xsd">
-      <TypeName>uspItemValidate_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspHeadValidate_ProcedureResultSet.dbo.InterfacePCFPeppolHeaderValidation.xsd">
-      <TypeName>uspHeadValidate_ProcedureResultSet_dbo_InterfacePCFPeppolHeaderValidation</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspHeadValidate_TypedProcedure.dbo.xsd">
-      <TypeName>uspHeadValidate_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspGRNPoll_TypedPolling.InterfacePCFPeppolGRNQueuePoll.xsd">
-      <TypeName>uspGRNPoll_TypedPolling_InterfacePCFPeppolGRNQueuePoll</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -161,36 +191,6 @@
     <None Include="PCFPeppolKey.snk" />
     <Schema Include="uspPCFProdXML_TypedPolling.uspPCFProdPeppolXml.xsd">
       <TypeName>uspPCFProdXML_TypedPolling_uspPCFProdPeppolXml</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspInvoiceDraftPoll_TypedPolling.InterfacePCFPeppolInvoiceDraftPoll.xsd">
-      <TypeName>uspInvoiceDraftPoll_TypedPolling_InterfacePCFPeppolInvoiceDraftPoll</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspInvoiceSubmit_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceSubmit.xsd">
-      <TypeName>uspInvoiceSubmit_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceSubmit</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspInvoiceSubmit_TypedProcedure.dbo.xsd">
-      <TypeName>uspInvoiceSubmit_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspGRNInvoice_ProcedureResultSet.dbo.InterfacePCFPeppolGRNInvoice.xsd">
-      <TypeName>uspGRNInvoice_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspGRNInvoice_TypedProcedure.dbo.xsd">
-      <TypeName>uspGRNInvoice_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspPCFPeppolPoll_TypedPolling.InterfacePCFPeppolPolling.xsd">
-      <TypeName>uspPCFPeppolPoll_TypedPolling_InterfacePCFPeppolPolling</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -226,7 +226,21 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo.xml" />
+    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo1.xml" />
+    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo2.xml" />
+    <Content Include="WcfReceivePort_SqlAdapterBinding_Custom.bindinginfo3.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo1.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo10.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo2.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo3.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo4.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo5.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo6.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo7.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo8.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo9.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />

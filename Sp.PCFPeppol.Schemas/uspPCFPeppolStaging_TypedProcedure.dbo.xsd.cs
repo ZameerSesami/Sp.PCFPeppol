@@ -21,9 +21,9 @@ namespace Sp.PCFPeppol.Schemas {
   <xs:annotation>
     <xs:appinfo>
       <fileNameHint xmlns=""http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd"">TypedProcedure.dbo</fileNameHint>
-      <references xmlns=""http://schemas.microsoft.com/BizTalk/2003"">
-        <reference targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolStaging"" />
-      </references>
+      <b:references>
+        <b:reference targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolStaging"" />
+      </b:references>
     </xs:appinfo>
   </xs:annotation>
   <xs:element name=""InterfacePCFPeppolStaging"">
@@ -100,7 +100,7 @@ namespace Sp.PCFPeppol.Schemas {
         <xs:element minOccurs=""0"" maxOccurs=""1"" name=""OrderReferenceId"" nillable=""true"">
           <xs:simpleType>
             <xs:restriction base=""xs:string"">
-              <xs:maxLength value=""20"" />
+              <xs:maxLength value=""100"" />
             </xs:restriction>
           </xs:simpleType>
         </xs:element>

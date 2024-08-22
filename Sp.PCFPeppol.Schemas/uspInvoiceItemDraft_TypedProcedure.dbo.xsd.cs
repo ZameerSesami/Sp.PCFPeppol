@@ -7,37 +7,37 @@ namespace Sp.PCFPeppol.Schemas {
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
-    [SchemaRoots(new string[] {@"InterfacePCFPeppolItemValidation", @"InterfacePCFPeppolItemValidationResponse"})]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Sp.PCFPeppol.Schemas.uspItemValidate_ProcedureResultSet_dbo_InterfacePCFPeppolItemValidation", typeof(global::Sp.PCFPeppol.Schemas.uspItemValidate_ProcedureResultSet_dbo_InterfacePCFPeppolItemValidation))]
-    public sealed class uspItemValidate_TypedProcedure_dbo : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    [SchemaRoots(new string[] {@"InterfacePCFPeppolInvoiceItemDraft", @"InterfacePCFPeppolInvoiceItemDraftResponse"})]
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Sp.PCFPeppol.Schemas.uspInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft", typeof(global::Sp.PCFPeppol.Schemas.uspInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft))]
+    public sealed class uspInvoiceItemDraft_TypedProcedure_dbo : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns:ns3=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolItemValidation"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo"" version=""1.0"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
-  <xs:import schemaLocation=""Sp.PCFPeppol.Schemas.uspItemValidate_ProcedureResultSet_dbo_InterfacePCFPeppolItemValidation"" namespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolItemValidation"" />
+<xs:schema xmlns:ns3=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceItemDraft"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo"" version=""1.0"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+  <xs:import schemaLocation=""Sp.PCFPeppol.Schemas.uspInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft"" namespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceItemDraft"" />
   <xs:annotation>
     <xs:appinfo>
       <fileNameHint xmlns=""http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd"">TypedProcedure.dbo</fileNameHint>
       <references xmlns=""http://schemas.microsoft.com/BizTalk/2003"">
-        <reference targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolItemValidation"" />
+        <reference targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceItemDraft"" />
       </references>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name=""InterfacePCFPeppolItemValidation"">
+  <xs:element name=""InterfacePCFPeppolInvoiceItemDraft"">
     <xs:annotation>
       <xs:documentation>
-        <doc:action xmlns:doc=""http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation"">TypedProcedure/dbo/InterfacePCFPeppolItemValidation</doc:action>
+        <doc:action xmlns:doc=""http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation"">TypedProcedure/dbo/InterfacePCFPeppolInvoiceItemDraft</doc:action>
       </xs:documentation>
     </xs:annotation>
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs=""0"" maxOccurs=""1"" name=""InstanceIdentifier"" nillable=""true"">
+        <xs:element minOccurs=""0"" maxOccurs=""1"" name=""ID"" nillable=""true"">
           <xs:simpleType>
             <xs:restriction base=""xs:string"">
-              <xs:maxLength value=""50"" />
+              <xs:maxLength value=""100"" />
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
@@ -90,14 +90,13 @@ namespace Sp.PCFPeppol.Schemas {
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
-        <xs:element minOccurs=""0"" maxOccurs=""1"" name=""EmailContent"" nillable=""true"" type=""xs:string"" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name=""InterfacePCFPeppolItemValidationResponse"">
+  <xs:element name=""InterfacePCFPeppolInvoiceItemDraftResponse"">
     <xs:annotation>
       <xs:documentation>
-        <doc:action xmlns:doc=""http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation"">TypedProcedure/dbo/InterfacePCFPeppolItemValidation/response</doc:action>
+        <doc:action xmlns:doc=""http://schemas.microsoft.com/servicemodel/adapters/metadata/documentation"">TypedProcedure/dbo/InterfacePCFPeppolInvoiceItemDraft/response</doc:action>
       </xs:documentation>
     </xs:annotation>
     <xs:complexType>
@@ -109,7 +108,7 @@ namespace Sp.PCFPeppol.Schemas {
   </xs:element>
 </xs:schema>";
         
-        public uspItemValidate_TypedProcedure_dbo() {
+        public uspInvoiceItemDraft_TypedProcedure_dbo() {
         }
         
         public override string XmlContent {
@@ -121,8 +120,8 @@ namespace Sp.PCFPeppol.Schemas {
         public override string[] RootNodes {
             get {
                 string[] _RootElements = new string [2];
-                _RootElements[0] = "InterfacePCFPeppolItemValidation";
-                _RootElements[1] = "InterfacePCFPeppolItemValidationResponse";
+                _RootElements[0] = "InterfacePCFPeppolInvoiceItemDraft";
+                _RootElements[1] = "InterfacePCFPeppolInvoiceItemDraftResponse";
                 return _RootElements;
             }
         }
@@ -136,15 +135,15 @@ namespace Sp.PCFPeppol.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo",@"InterfacePCFPeppolItemValidation")]
+        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo",@"InterfacePCFPeppolInvoiceItemDraft")]
         [System.SerializableAttribute()]
-        [SchemaRoots(new string[] {@"InterfacePCFPeppolItemValidation"})]
-        public sealed class InterfacePCFPeppolItemValidation : Microsoft.XLANGs.BaseTypes.SchemaBase {
+        [SchemaRoots(new string[] {@"InterfacePCFPeppolInvoiceItemDraft"})]
+        public sealed class InterfacePCFPeppolInvoiceItemDraft : Microsoft.XLANGs.BaseTypes.SchemaBase {
             
             [System.NonSerializedAttribute()]
             private static object _rawSchema;
             
-            public InterfacePCFPeppolItemValidation() {
+            public InterfacePCFPeppolInvoiceItemDraft() {
             }
             
             public override string XmlContent {
@@ -156,7 +155,7 @@ namespace Sp.PCFPeppol.Schemas {
             public override string[] RootNodes {
                 get {
                     string[] _RootElements = new string [1];
-                    _RootElements[0] = "InterfacePCFPeppolItemValidation";
+                    _RootElements[0] = "InterfacePCFPeppolInvoiceItemDraft";
                     return _RootElements;
                 }
             }
@@ -171,15 +170,15 @@ namespace Sp.PCFPeppol.Schemas {
             }
         }
         
-        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo",@"InterfacePCFPeppolItemValidationResponse")]
+        [Schema(@"http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo",@"InterfacePCFPeppolInvoiceItemDraftResponse")]
         [System.SerializableAttribute()]
-        [SchemaRoots(new string[] {@"InterfacePCFPeppolItemValidationResponse"})]
-        public sealed class InterfacePCFPeppolItemValidationResponse : Microsoft.XLANGs.BaseTypes.SchemaBase {
+        [SchemaRoots(new string[] {@"InterfacePCFPeppolInvoiceItemDraftResponse"})]
+        public sealed class InterfacePCFPeppolInvoiceItemDraftResponse : Microsoft.XLANGs.BaseTypes.SchemaBase {
             
             [System.NonSerializedAttribute()]
             private static object _rawSchema;
             
-            public InterfacePCFPeppolItemValidationResponse() {
+            public InterfacePCFPeppolInvoiceItemDraftResponse() {
             }
             
             public override string XmlContent {
@@ -191,7 +190,7 @@ namespace Sp.PCFPeppol.Schemas {
             public override string[] RootNodes {
                 get {
                     string[] _RootElements = new string [1];
-                    _RootElements[0] = "InterfacePCFPeppolItemValidationResponse";
+                    _RootElements[0] = "InterfacePCFPeppolInvoiceItemDraftResponse";
                     return _RootElements;
                 }
             }

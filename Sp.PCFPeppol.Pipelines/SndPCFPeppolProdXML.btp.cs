@@ -43,7 +43,7 @@ namespace Sp.PCFPeppol.Pipelines
 "code\" minOccurs=\"0\" maxOccurs=\"-1\" execMethod=\"All\" stageId=\"9d0e4108-4cce-4536-83fa-4a5040674ad6\" /"+
 ">      <Components />    </Stage>  </Stages></Document>";
         
-        private const string _versionDependentGuid = "91aab48d-8c95-4786-a343-996fc88b949f";
+        private const string _versionDependentGuid = "dda93fcc-0a24-468b-a00f-66b822a37c3f";
         
         public SndPCFPeppolProdXML()
         {

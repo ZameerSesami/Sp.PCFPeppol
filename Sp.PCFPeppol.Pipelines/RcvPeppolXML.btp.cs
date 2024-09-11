@@ -56,7 +56,7 @@ namespace Sp.PCFPeppol.Pipelines
 "y\" minOccurs=\"0\" maxOccurs=\"-1\" execMethod=\"All\" stageId=\"9d0e410e-4cce-4536-83fa-4a5040674ad6\" />  "+
 "    <Components />    </Stage>  </Stages></Document>";
         
-        private const string _versionDependentGuid = "381be958-5427-4ecf-a0f4-4e478fc6d0fa";
+        private const string _versionDependentGuid = "d08f1a86-55db-470e-90b1-e6b43f914400";
         
         public RcvPeppolXML()
         {

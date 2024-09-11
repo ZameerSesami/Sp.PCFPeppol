@@ -88,6 +88,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="uspPeppolPCFStage_ProcedureResultSet.dbo.InterfacePCFPeppolStaging.xsd">
+      <TypeName>uspPeppolPCFStage_ProcedureResultSet_dbo_InterfacePCFPeppolStaging</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPeppolPCFStage_TypedProcedure.dbo.xsd">
+      <TypeName>uspPeppolPCFStage_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFProdPeppolUpd_TypedProcedure.dbo.xsd">
+      <TypeName>uspPCFProdPeppolUpd_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="uspSubmitInvoice_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceSubmit.xsd">
       <TypeName>uspSubmitInvoice_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceSubmit</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
@@ -163,16 +178,6 @@
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="uspPCFPeppolStaging_ProcedureResultSet.dbo.InterfacePCFPeppolStaging.xsd">
-      <TypeName>uspPCFPeppolStaging_ProcedureResultSet_dbo_InterfacePCFPeppolStaging</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspPCFPeppolStaging_TypedProcedure.dbo.xsd">
-      <TypeName>uspPCFPeppolStaging_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
     <Schema Include="InvoiceLineType.xsd">
       <TypeName>InvoiceLineType</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
@@ -233,6 +238,8 @@
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo1.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo10.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo11.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo12.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo2.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo3.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo4.xml" />

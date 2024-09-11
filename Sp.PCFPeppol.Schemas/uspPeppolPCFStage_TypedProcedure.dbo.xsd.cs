@@ -8,8 +8,8 @@ namespace Sp.PCFPeppol.Schemas {
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"InterfacePCFPeppolStaging", @"InterfacePCFPeppolStagingResponse"})]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Sp.PCFPeppol.Schemas.uspPCFPeppolStaging_ProcedureResultSet_dbo_InterfacePCFPeppolStaging", typeof(global::Sp.PCFPeppol.Schemas.uspPCFPeppolStaging_ProcedureResultSet_dbo_InterfacePCFPeppolStaging))]
-    public sealed class uspPCFPeppolStaging_TypedProcedure_dbo : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Sp.PCFPeppol.Schemas.uspPeppolPCFStage_ProcedureResultSet_dbo_InterfacePCFPeppolStaging", typeof(global::Sp.PCFPeppol.Schemas.uspPeppolPCFStage_ProcedureResultSet_dbo_InterfacePCFPeppolStaging))]
+    public sealed class uspPeppolPCFStage_TypedProcedure_dbo : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
@@ -17,13 +17,13 @@ namespace Sp.PCFPeppol.Schemas {
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
 <xs:schema xmlns:ns3=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolStaging"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo"" version=""1.0"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
-  <xs:import schemaLocation=""Sp.PCFPeppol.Schemas.uspPCFPeppolStaging_ProcedureResultSet_dbo_InterfacePCFPeppolStaging"" namespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolStaging"" />
+  <xs:import schemaLocation=""Sp.PCFPeppol.Schemas.uspPeppolPCFStage_ProcedureResultSet_dbo_InterfacePCFPeppolStaging"" namespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolStaging"" />
   <xs:annotation>
     <xs:appinfo>
       <fileNameHint xmlns=""http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd"">TypedProcedure.dbo</fileNameHint>
-      <b:references>
-        <b:reference targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolStaging"" />
-      </b:references>
+      <references xmlns=""http://schemas.microsoft.com/BizTalk/2003"">
+        <reference targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolStaging"" />
+      </references>
     </xs:appinfo>
   </xs:annotation>
   <xs:element name=""InterfacePCFPeppolStaging"">
@@ -73,6 +73,13 @@ namespace Sp.PCFPeppol.Schemas {
           <xs:simpleType>
             <xs:restriction base=""xs:string"">
               <xs:maxLength value=""150"" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs=""0"" maxOccurs=""1"" name=""CurrencyCode"" nillable=""true"">
+          <xs:simpleType>
+            <xs:restriction base=""xs:string"">
+              <xs:maxLength value=""10"" />
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
@@ -146,6 +153,13 @@ namespace Sp.PCFPeppol.Schemas {
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
+        <xs:element minOccurs=""0"" maxOccurs=""1"" name=""InvoiceItemsCount"" nillable=""true"">
+          <xs:simpleType>
+            <xs:restriction base=""xs:string"">
+              <xs:maxLength value=""10"" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
         <xs:element minOccurs=""0"" maxOccurs=""1"" name=""TotalQty"" nillable=""true"">
           <xs:simpleType>
             <xs:restriction base=""xs:string"">
@@ -206,7 +220,7 @@ namespace Sp.PCFPeppol.Schemas {
   </xs:element>
 </xs:schema>";
         
-        public uspPCFPeppolStaging_TypedProcedure_dbo() {
+        public uspPeppolPCFStage_TypedProcedure_dbo() {
         }
         
         public override string XmlContent {

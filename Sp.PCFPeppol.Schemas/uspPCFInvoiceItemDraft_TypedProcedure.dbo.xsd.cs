@@ -8,8 +8,8 @@ namespace Sp.PCFPeppol.Schemas {
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"InterfacePCFPeppolInvoiceItemDraft", @"InterfacePCFPeppolInvoiceItemDraftResponse"})]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Sp.PCFPeppol.Schemas.uspInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft", typeof(global::Sp.PCFPeppol.Schemas.uspInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft))]
-    public sealed class uspInvoiceItemDraft_TypedProcedure_dbo : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Sp.PCFPeppol.Schemas.uspPCFInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft", typeof(global::Sp.PCFPeppol.Schemas.uspPCFInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft))]
+    public sealed class uspPCFInvoiceItemDraft_TypedProcedure_dbo : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
@@ -17,7 +17,7 @@ namespace Sp.PCFPeppol.Schemas {
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
 <xs:schema xmlns:ns3=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceItemDraft"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo"" version=""1.0"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
-  <xs:import schemaLocation=""Sp.PCFPeppol.Schemas.uspInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft"" namespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceItemDraft"" />
+  <xs:import schemaLocation=""Sp.PCFPeppol.Schemas.uspPCFInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft"" namespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolInvoiceItemDraft"" />
   <xs:annotation>
     <xs:appinfo>
       <fileNameHint xmlns=""http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd"">TypedProcedure.dbo</fileNameHint>
@@ -42,6 +42,13 @@ namespace Sp.PCFPeppol.Schemas {
           </xs:simpleType>
         </xs:element>
         <xs:element minOccurs=""0"" maxOccurs=""1"" name=""LineId"" nillable=""true"">
+          <xs:simpleType>
+            <xs:restriction base=""xs:string"">
+              <xs:maxLength value=""20"" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element minOccurs=""0"" maxOccurs=""1"" name=""OrderLineRefId"" nillable=""true"">
           <xs:simpleType>
             <xs:restriction base=""xs:string"">
               <xs:maxLength value=""20"" />
@@ -108,7 +115,7 @@ namespace Sp.PCFPeppol.Schemas {
   </xs:element>
 </xs:schema>";
         
-        public uspInvoiceItemDraft_TypedProcedure_dbo() {
+        public uspPCFInvoiceItemDraft_TypedProcedure_dbo() {
         }
         
         public override string XmlContent {

@@ -88,6 +88,26 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="uspPCFInvoiceItemDraft_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceItemDraft.xsd">
+      <TypeName>uspPCFInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFInvoiceItemDraft_TypedProcedure.dbo.xsd">
+      <TypeName>uspPCFInvoiceItemDraft_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFPeppolItemValidation_ProcedureResultSet.dbo.InterfacePCFPeppolItemValidation.xsd">
+      <TypeName>uspPCFPeppolItemValidation_ProcedureResultSet_dbo_InterfacePCFPeppolItemValidation</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFPeppolItemValidation_TypedProcedure.dbo.xsd">
+      <TypeName>uspPCFPeppolItemValidation_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="uspPeppolPCFStage_ProcedureResultSet.dbo.InterfacePCFPeppolStaging.xsd">
       <TypeName>uspPeppolPCFStage_ProcedureResultSet_dbo_InterfacePCFPeppolStaging</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
@@ -118,16 +138,6 @@
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="uspInvoiceItemDraft_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceItemDraft.xsd">
-      <TypeName>uspInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspInvoiceItemDraft_TypedProcedure.dbo.xsd">
-      <TypeName>uspInvoiceItemDraft_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
     <Schema Include="uspInvoiceDraft_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceDraft.xsd">
       <TypeName>uspInvoiceDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceDraft</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
@@ -150,16 +160,6 @@
     </Schema>
     <Schema Include="uspPCFGRNInvoice_TypedProcedure.dbo.xsd">
       <TypeName>uspPCFGRNInvoice_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspPCFItemValidate_ProcedureResultSet.dbo.InterfacePCFPeppolItemValidation.xsd">
-      <TypeName>uspPCFItemValidate_ProcedureResultSet_dbo_InterfacePCFPeppolItemValidation</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspPCFItemValidate_TypedProcedure.dbo.xsd">
-      <TypeName>uspPCFItemValidate_TypedProcedure_dbo</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -240,6 +240,8 @@
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo10.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo11.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo12.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo13.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo14.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo2.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo3.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo4.xml" />

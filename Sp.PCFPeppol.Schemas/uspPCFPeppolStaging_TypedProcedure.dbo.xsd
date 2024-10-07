@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:ns3="http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolStaging" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation=".\uspPeppolPCFStage_ProcedureResultSet.dbo.InterfacePCFPeppolStaging.xsd" namespace="http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolStaging" />
+  <xs:import schemaLocation=".\uspPCFPeppolStaging_ProcedureResultSet.dbo.InterfacePCFPeppolStaging.xsd" namespace="http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolStaging" />
   <xs:annotation>
     <xs:appinfo>
       <fileNameHint xmlns="http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd">TypedProcedure.dbo</fileNameHint>
@@ -136,7 +136,7 @@
         <xs:element minOccurs="0" maxOccurs="1" name="InvoiceItemsCount" nillable="true">
           <xs:simpleType>
             <xs:restriction base="xs:string">
-              <xs:maxLength value="10" />
+              <xs:maxLength value="2" />
             </xs:restriction>
           </xs:simpleType>
         </xs:element>

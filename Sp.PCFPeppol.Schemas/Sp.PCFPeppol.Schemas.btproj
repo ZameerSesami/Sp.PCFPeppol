@@ -88,6 +88,41 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Schema Include="uspPCFAttachment_ProcedureResultSet.dbo.InterfacePCFPeppolAttachment.xsd">
+      <TypeName>uspPCFAttachment_ProcedureResultSet_dbo_InterfacePCFPeppolAttachment</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFAttachment_TypedProcedure.dbo.xsd">
+      <TypeName>uspPCFAttachment_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFInvoiceGRN_ProcedureResultSet.dbo.InterfacePCFPeppolGRNInvoice.xsd">
+      <TypeName>uspPCFInvoiceGRN_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFInvoiceGRN_TypedProcedure.dbo.xsd">
+      <TypeName>uspPCFInvoiceGRN_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFPeppolStaging_ProcedureResultSet.dbo.InterfacePCFPeppolStaging.xsd">
+      <TypeName>uspPCFPeppolStaging_ProcedureResultSet_dbo_InterfacePCFPeppolStaging</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="uspPCFPeppolStaging_TypedProcedure.dbo.xsd">
+      <TypeName>uspPCFPeppolStaging_TypedProcedure_dbo</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="SSOAttachmentPath.xsd">
+      <TypeName>SSOAttachmentPath</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <Schema Include="uspPCFInvoiceItemDraft_ProcedureResultSet.dbo.InterfacePCFPeppolInvoiceItemDraft.xsd">
       <TypeName>uspPCFInvoiceItemDraft_ProcedureResultSet_dbo_InterfacePCFPeppolInvoiceItemDraft</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
@@ -105,16 +140,6 @@
     </Schema>
     <Schema Include="uspPCFPeppolItemValidation_TypedProcedure.dbo.xsd">
       <TypeName>uspPCFPeppolItemValidation_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspPeppolPCFStage_ProcedureResultSet.dbo.InterfacePCFPeppolStaging.xsd">
-      <TypeName>uspPeppolPCFStage_ProcedureResultSet_dbo_InterfacePCFPeppolStaging</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspPeppolPCFStage_TypedProcedure.dbo.xsd">
-      <TypeName>uspPeppolPCFStage_TypedProcedure_dbo</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -153,16 +178,6 @@
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
-    <Schema Include="uspPCFGRNInvoice_ProcedureResultSet.dbo.InterfacePCFPeppolGRNInvoice.xsd">
-      <TypeName>uspPCFGRNInvoice_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-    <Schema Include="uspPCFGRNInvoice_TypedProcedure.dbo.xsd">
-      <TypeName>uspPCFGRNInvoice_TypedProcedure_dbo</TypeName>
-      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
     <Schema Include="uspHeadValidation_ProcedureResultSet.dbo.InterfacePCFPeppolHeaderValidation.xsd">
       <TypeName>uspHeadValidation_ProcedureResultSet_dbo_InterfacePCFPeppolHeaderValidation</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
@@ -190,6 +205,11 @@
     </Schema>
     <Schema Include="PCFPeppolInternalXML.xsd">
       <TypeName>PCFPeppolInternalXML</TypeName>
+      <Namespace>Sp.PCFPeppol.Schemas</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="InvoiceAttachment.xsd">
+      <TypeName>InvoiceAttachment</TypeName>
       <Namespace>Sp.PCFPeppol.Schemas</Namespace>
       <SubType>Task</SubType>
     </Schema>
@@ -242,6 +262,11 @@
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo12.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo13.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo14.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo15.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo16.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo17.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo18.xml" />
+    <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo19.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo2.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo3.xml" />
     <Content Include="WcfSendPort_SqlAdapterBinding_Custom.bindinginfo4.xml" />

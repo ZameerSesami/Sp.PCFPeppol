@@ -89,6 +89,12 @@
     </Map>
   </ItemGroup>
   <ItemGroup>
+    <Map Include="Map_PeppolAttachment_uspReq.btm">
+      <TypeName>Map_PeppolAttachment_uspReq</TypeName>
+      <Namespace>Sp.PCFPeppol.Transforms</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Content Include="Map_PeppolAttachment_uspReq.xsl" />
     <Content Include="Map_PeppolXML_PCFPeppolInternal.xsl" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

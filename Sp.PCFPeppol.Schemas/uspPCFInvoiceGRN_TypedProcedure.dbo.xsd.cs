@@ -8,8 +8,8 @@ namespace Sp.PCFPeppol.Schemas {
     [SchemaType(SchemaTypeEnum.Document)]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"InterfacePCFPeppolGRNInvoice", @"InterfacePCFPeppolGRNInvoiceResponse"})]
-    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Sp.PCFPeppol.Schemas.uspPCFGRNInvoice_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice", typeof(global::Sp.PCFPeppol.Schemas.uspPCFGRNInvoice_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice))]
-    public sealed class uspPCFGRNInvoice_TypedProcedure_dbo : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    [Microsoft.XLANGs.BaseTypes.SchemaReference(@"Sp.PCFPeppol.Schemas.uspPCFInvoiceGRN_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice", typeof(global::Sp.PCFPeppol.Schemas.uspPCFInvoiceGRN_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice))]
+    public sealed class uspPCFInvoiceGRN_TypedProcedure_dbo : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
@@ -17,7 +17,7 @@ namespace Sp.PCFPeppol.Schemas {
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
 <xs:schema xmlns:ns3=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolGRNInvoice"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" elementFormDefault=""qualified"" targetNamespace=""http://schemas.microsoft.com/Sql/2008/05/TypedProcedures/dbo"" version=""1.0"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
-  <xs:import schemaLocation=""Sp.PCFPeppol.Schemas.uspPCFGRNInvoice_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice"" namespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolGRNInvoice"" />
+  <xs:import schemaLocation=""Sp.PCFPeppol.Schemas.uspPCFInvoiceGRN_ProcedureResultSet_dbo_InterfacePCFPeppolGRNInvoice"" namespace=""http://schemas.microsoft.com/Sql/2008/05/ProceduresResultSets/dbo/InterfacePCFPeppolGRNInvoice"" />
   <xs:annotation>
     <xs:appinfo>
       <fileNameHint xmlns=""http://schemas.microsoft.com/servicemodel/adapters/metadata/xsd"">TypedProcedure.dbo</fileNameHint>
@@ -41,6 +41,13 @@ namespace Sp.PCFPeppol.Schemas {
             </xs:restriction>
           </xs:simpleType>
         </xs:element>
+        <xs:element minOccurs=""0"" maxOccurs=""1"" name=""AttachmentID"" nillable=""true"">
+          <xs:simpleType>
+            <xs:restriction base=""xs:string"">
+              <xs:maxLength value=""500"" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -59,7 +66,7 @@ namespace Sp.PCFPeppol.Schemas {
   </xs:element>
 </xs:schema>";
         
-        public uspPCFGRNInvoice_TypedProcedure_dbo() {
+        public uspPCFInvoiceGRN_TypedProcedure_dbo() {
         }
         
         public override string XmlContent {

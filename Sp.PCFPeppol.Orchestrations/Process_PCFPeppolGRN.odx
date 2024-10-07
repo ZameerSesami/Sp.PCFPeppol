@@ -217,7 +217,7 @@
                 <om:Property Name="Type" Value="System.Int32" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="varInvLoopCounter" />
+                <om:Property Name="Name" Value="varInvLineLoopCounter" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
             <om:Element Type="VariableDeclaration" OID="f2072227-56e9-4e01-b1bf-7db000a0de7a" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="75.1" HigherBound="76.1">
@@ -225,7 +225,7 @@
                 <om:Property Name="Type" Value="System.String" />
                 <om:Property Name="ParamDirection" Value="In" />
                 <om:Property Name="ReportToAnalyst" Value="True" />
-                <om:Property Name="Name" Value="varInvLoopItem" />
+                <om:Property Name="Name" Value="varInvLineLoopItem" />
                 <om:Property Name="Signal" Value="True" />
             </om:Element>
             <om:Element Type="VariableDeclaration" OID="12697d6a-6d79-44bd-b089-9fd25fbe9be5" ParentLink="ServiceDeclaration_VariableDeclaration" LowerBound="76.1" HigherBound="77.1">
@@ -522,16 +522,16 @@
                                     <om:Property Name="Signal" Value="True" />
                                 </om:Element>
                                 <om:Element Type="VariableAssignment" OID="a933ba40-5921-4b0a-ae1e-499355d2635c" ParentLink="ComplexStatement_Statement" LowerBound="250.1" HigherBound="254.1">
-                                    <om:Property Name="Expression" Value="varInvLoopCounter = 0;&#xD;&#xA;varInvoiceLineCount = System.Convert.ToInt32(xpath(msgPCFInternalXML,&quot;count(/*[local-name()='StandardBusinessDocument']/*[local-name()='Invoice']/*[local-name()='InvoiceLine'])&quot;));&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;PCFPeppolInvLineCount&quot;,varInvoiceLineCount.ToString());" />
+                                    <om:Property Name="Expression" Value="varInvLineLoopCounter = 0;&#xD;&#xA;varInvoiceLineCount = System.Convert.ToInt32(xpath(msgPCFInternalXML,&quot;count(/*[local-name()='StandardBusinessDocument']/*[local-name()='Invoice']/*[local-name()='InvoiceLine'])&quot;));&#xD;&#xA;System.Diagnostics.EventLog.WriteEntry(&quot;PCFPeppolInvLineCount&quot;,varInvoiceLineCount.ToString());" />
                                     <om:Property Name="ReportToAnalyst" Value="True" />
                                     <om:Property Name="Name" Value="Inv_Loop_Counter" />
-                                    <om:Property Name="Signal" Value="True" />
+                                    <om:Property Name="Signal" Value="False" />
                                 </om:Element>
                                 <om:Element Type="While" OID="386fca0e-da5b-4ab3-9c55-791c97a9bdd1" ParentLink="ComplexStatement_Statement" LowerBound="254.1" HigherBound="330.1">
-                                    <om:Property Name="Expression" Value="varInvLoopCounter &lt; varInvoiceLineCount" />
+                                    <om:Property Name="Expression" Value="varInvLineLoopCounter &lt; varInvoiceLineCount" />
                                     <om:Property Name="ReportToAnalyst" Value="True" />
                                     <om:Property Name="Name" Value="Loop_Each_Inv_Item" />
-                                    <om:Property Name="Signal" Value="False" />
+                                    <om:Property Name="Signal" Value="True" />
                                     <om:Element Type="Scope" OID="6703948d-4ba2-400a-bbc7-536725cc89d0" ParentLink="ComplexStatement_Statement" LowerBound="257.1" HigherBound="329.1">
                                         <om:Property Name="InitializedTransactionType" Value="True" />
                                         <om:Property Name="IsSynchronized" Value="False" />
@@ -548,10 +548,10 @@
                                                 <om:Property Name="Signal" Value="False" />
                                             </om:Element>
                                             <om:Element Type="MessageAssignment" OID="1e667827-bfe2-40b6-aefa-69307e6465f3" ParentLink="ComplexStatement_Statement" LowerBound="265.1" HigherBound="269.1">
-                                                <om:Property Name="Expression" Value="varInvLoopCounter = varInvLoopCounter + 1;&#xD;&#xA;varInvLoopItem = varInvLoopCounter.ToString();&#xD;&#xA;msgInvoiceLine = xpath(msgPCFInternalXML,&quot;/*[local-name()='StandardBusinessDocument']/*[local-name()='Invoice']/*[local-name()='InvoiceLine'][&quot;+ varInvLoopItem +&quot;]&quot;);" />
+                                                <om:Property Name="Expression" Value="varInvLineLoopCounter = varInvLineLoopCounter + 1;&#xD;&#xA;varInvLineLoopItem = varInvLineLoopCounter.ToString();&#xD;&#xA;msgInvoiceLine = xpath(msgPCFInternalXML,&quot;/*[local-name()='StandardBusinessDocument']/*[local-name()='Invoice']/*[local-name()='InvoiceLine'][&quot;+ varInvLineLoopItem +&quot;]&quot;);" />
                                                 <om:Property Name="ReportToAnalyst" Value="False" />
                                                 <om:Property Name="Name" Value="MessageAssignment_1" />
-                                                <om:Property Name="Signal" Value="True" />
+                                                <om:Property Name="Signal" Value="False" />
                                             </om:Element>
                                         </om:Element>
                                         <om:Element Type="VariableAssignment" OID="c4423a7c-6a5d-4f36-b57d-712a6f775803" ParentLink="ComplexStatement_Statement" LowerBound="270.1" HigherBound="279.1">
@@ -858,8 +858,8 @@ module Sp.PCFPeppol.Orchestrations
         System.String varuspDraftRespStatus;
         System.String varuspDraftRespmsg;
         System.Int32 varInvoiceLineCount;
-        System.Int32 varInvLoopCounter;
-        System.String varInvLoopItem;
+        System.Int32 varInvLineLoopCounter;
+        System.String varInvLineLoopItem;
         System.String varLineId;
         System.String varLineQty;
         System.String varLineAmount;
@@ -883,8 +883,8 @@ module Sp.PCFPeppol.Orchestrations
             varuspDraftRespStatus = "";
             varuspDraftRespmsg = "";
             varInvoiceLineCount = 0;
-            varInvLoopCounter = 0;
-            varInvLoopItem = "";
+            varInvLineLoopCounter = 0;
+            varInvLineLoopItem = "";
             varLineId = "";
             varLineQty = "";
             varLineAmount = "";
@@ -1035,11 +1035,11 @@ module Sp.PCFPeppol.Orchestrations
                                 }
                             }
                             [Microsoft.XLANGs.BaseTypes.DesignerPosition("a933ba40-5921-4b0a-ae1e-499355d2635c")]
-                            varInvLoopCounter = 0;
+                            varInvLineLoopCounter = 0;
                             varInvoiceLineCount = System.Convert.ToInt32(xpath(msgPCFInternalXML,"count(/*[local-name()='StandardBusinessDocument']/*[local-name()='Invoice']/*[local-name()='InvoiceLine'])"));
                             System.Diagnostics.EventLog.WriteEntry("PCFPeppolInvLineCount",varInvoiceLineCount.ToString());
                             [Microsoft.XLANGs.BaseTypes.DesignerPosition("386fca0e-da5b-4ab3-9c55-791c97a9bdd1")]
-                            while (varInvLoopCounter < varInvoiceLineCount)
+                            while (varInvLineLoopCounter < varInvoiceLineCount)
                             {
                                 [Microsoft.XLANGs.BaseTypes.DesignerPosition("6703948d-4ba2-400a-bbc7-536725cc89d0")]
                                 scope
@@ -1050,9 +1050,9 @@ module Sp.PCFPeppol.Orchestrations
                                         construct msgInvoiceLine
                                         {
                                             [Microsoft.XLANGs.BaseTypes.DesignerPosition("1e667827-bfe2-40b6-aefa-69307e6465f3")]
-                                            varInvLoopCounter = varInvLoopCounter + 1;
-                                            varInvLoopItem = varInvLoopCounter.ToString();
-                                            msgInvoiceLine = xpath(msgPCFInternalXML,"/*[local-name()='StandardBusinessDocument']/*[local-name()='Invoice']/*[local-name()='InvoiceLine']["+ varInvLoopItem +"]");
+                                            varInvLineLoopCounter = varInvLineLoopCounter + 1;
+                                            varInvLineLoopItem = varInvLineLoopCounter.ToString();
+                                            msgInvoiceLine = xpath(msgPCFInternalXML,"/*[local-name()='StandardBusinessDocument']/*[local-name()='Invoice']/*[local-name()='InvoiceLine']["+ varInvLineLoopItem +"]");
                                         }
                                         [Microsoft.XLANGs.BaseTypes.DesignerPosition("c4423a7c-6a5d-4f36-b57d-712a6f775803")]
                                         varLineId = xpath(msgInvoiceLine,"string(/*[local-name()='InvoiceLine']/*[local-name()='ID'])");
